@@ -13,7 +13,7 @@
       min-height: 100vh;
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f5f5 url('https://unsplash.com/photos/couple-holding-each-hands-oyjkwQLkyWw') no-repeat center/cover;
+      background: #f5f5f5 url('https://via.placeholder.com/1920x1080') no-repeat center/cover;
       color: white;
       text-align: center;
     }
@@ -32,18 +32,31 @@
     }
     footer {
       position: absolute;
-      bottom: 10px;
+      bottom: 20px;
       text-align: center;
       font-size: 1rem;
       color: #fff;
     }
-    a {
-      color: #fff;
+    .button {
+      display: inline-block;
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
       text-decoration: none;
-      font-weight: bold;
+      margin: 5px;
     }
-    a:hover {
-      text-decoration: underline;
+    .button:hover {
+      background-color: #218838;
+    }
+    .email-button {
+      background-color: #007bff;
+    }
+    .email-button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
@@ -53,7 +66,9 @@
     <p>Coming Soon...</p>
   </div>
   <footer>
-    Contact us: <a href="tel:+254705757661">+254705757661</a>
+    <p>Contact us:</p>
+    <a href="tel:+254705757661" class="button">Call Us: +254705757661</a>
+    <a href="mailto:ty@sanduku.live" class="button email-button">Email Us: ty@sanduku.live</a>
   </footer>
 </body>
 </html>
